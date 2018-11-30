@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Checking Out Code') {
             steps {
                checkout scm               
             }
