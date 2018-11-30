@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checking Out Code') {
             steps {
-              bat 'javac HelloWorld.java'          
+              bat 'javac HelloWorld.java'  
+                bat 'java HelloWorld' 
             }
         }
     }
