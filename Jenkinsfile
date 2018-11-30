@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checking Out Code') {
             steps {
-               checkout scm               
+              bat 'javac HelloWorld.java'          
             }
         }
     }
