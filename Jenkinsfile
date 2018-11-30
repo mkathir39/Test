@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                javac HelloWorld.java
-                java HelloWorld
+               checkout scm               
             }
         }
     }
